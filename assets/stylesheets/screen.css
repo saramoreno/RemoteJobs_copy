@@ -107,7 +107,7 @@ html {
 /* line 18, ../sass/base/_base.scss */
 body {
   background: white;
-  color: #333333;
+  color: black;
   font-family: "Lato", sans-serif;
   font-size: 100%;
   line-height: normal;
@@ -139,7 +139,7 @@ a {
 
 /* line 49, ../sass/base/_base.scss */
 p a {
-  color: #e8f8f5;
+  color: #cc0000;
 }
 
 /* line 53, ../sass/base/_base.scss */
@@ -329,19 +329,25 @@ h3, .gamma {
   font-size: 1.42857rem;
 }
 
-/* line 35, ../sass/base/_headings.scss */
-.normal-heading, .big-heading {
-  font-size: 30px;
-  font-size: 2.14286rem;
-  font-weight: 300;
-  margin: 1.25em 0 0.625em 0;
-  text-align: center;
+/* line 36, ../sass/base/_headings.scss */
+.main-title a {
+  text-transform: uppercase;
+  color: #cc0000;
+  letter-spacing: 5px;
+  font-size: 1.4rem;
 }
-
 /* line 42, ../sass/base/_headings.scss */
-.big-heading {
-  font-size: 36px;
-  font-size: 2.57143rem;
+.main-title .subtitle {
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+}
+/* line 48, ../sass/base/_headings.scss */
+.main-title span.icon {
+  color: #FB9A36;
+  font-size: 14px;
+  font-size: 1rem;
 }
 
 /*------------------------------------*\
@@ -496,13 +502,13 @@ p {
 
 /* line 62, ../sass/base/_normalize.scss */
 ::selection {
-  background: #e8f8f5;
+  background: #cc0000;
   color: #FFF;
 }
 
 /* line 66, ../sass/base/_normalize.scss */
 ::-moz-selection {
-  background: #e8f8f5;
+  background: #cc0000;
   color: #FFF;
 }
 
@@ -568,3 +574,7 @@ table {
 .icon-rss-square:before {
   content: "\f143";
 }
+
+/*------------------------------------------*\
+    Main list
+\*------------------------------------------*/

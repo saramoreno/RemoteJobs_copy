@@ -32,15 +32,22 @@ h3, .gamma {
 //   @include font-size($font_size_kilo);
 // }
 
-.normal-heading {
-  @include font-size(30);
-  font-weight: 300;
-  margin: 1.25em 0 0.625em 0;
-  text-align: center;
-}
-
-.big-heading {
-  @include font-size(36);
-  @extend .normal-heading;
+.main-title {
+  a {
+    text-transform: uppercase;
+    color: $primary;
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+  }
+  .subtitle {
+    color:$textLight;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: normal;
+  }
+  span.icon {
+    color:#FB9A36;
+    @include font-size(14);
+  }
 }
 
