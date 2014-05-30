@@ -1,0 +1,570 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    $HELPERS
+    -> Extends, Functions, Mixins, Animations
+\*------------------------------------*/
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/* Tipos */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bla.ttf.otf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Bla.ttf.otf?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bla.ttf.woff") format("woff"), url("../fonts/Lato-Bla.ttf.ttf") format("truetype"), url("../fonts/Lato-Bla.ttf.svg#Lato") format("svg");
+  /* Legacy iOS */
+  font-weight: "Lato-Light.ttf";
+  font-style: "Lato-Bol.ttf";
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Bentham";
+  src: url("../fonts/Bentham.otf.otf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Bentham.otf.otf?#iefix") format("embedded-opentype"), url("../fonts/Bentham.otf.woff") format("woff"), url("../fonts/Bentham.otf.ttf") format("truetype"), url("../fonts/Bentham.otf.svg#Bentham") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* Global */
+/* line 14, ../sass/base/_base.scss */
+html {
+  font-size: 87.5%;
+}
+
+/* line 18, ../sass/base/_base.scss */
+body {
+  background: white;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  line-height: normal;
+}
+
+/* line 26, ../sass/base/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* Block Content */
+/* line 33, ../sass/base/_base.scss */
+h1, h2, h2, h3, h4, h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 38, ../sass/base/_base.scss */
+p {
+  line-height: 1.3;
+}
+
+/* Inline Content */
+/* line 44, ../sass/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 49, ../sass/base/_base.scss */
+p a {
+  color: #e8f8f5;
+}
+
+/* line 53, ../sass/base/_base.scss */
+.normal-p {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  font-weight: bold;
+}
+
+/* line 58, ../sass/base/_base.scss */
+.small {
+  font-weight: 300;
+}
+
+/* line 63, ../sass/base/_base.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 66, ../sass/base/_base.scss */
+.left-align {
+  text-align: left;
+}
+
+/* line 69, ../sass/base/_base.scss */
+.right-align {
+  text-align: right;
+}
+
+/* line 74, ../sass/base/_base.scss */
+.left {
+  float: left;
+}
+
+/* line 77, ../sass/base/_base.scss */
+.right {
+  float: right;
+}
+
+/* line 80, ../sass/base/_base.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 83, ../sass/base/_base.scss */
+.no-float {
+  float: none;
+}
+
+/* line 87, ../sass/base/_base.scss */
+.inline-content {
+  display: inline-block;
+}
+
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/* line 5, ../sass/base/_forms.scss */
+form {
+  margin: 0;
+}
+
+/* line 9, ../sass/base/_forms.scss */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../sass/base/_forms.scss */
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+/* line 22, ../sass/base/_forms.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 27, ../sass/base/_forms.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 32, ../sass/base/_forms.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* line 37, ../sass/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+/* line 46, ../sass/base/_forms.scss */
+.normal-form {
+  margin: 2em auto;
+}
+/* line 49, ../sass/base/_forms.scss */
+.normal-form input {
+  border: 1px solid #555;
+  opacity: .5;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: 1em;
+  outline: none;
+  margin-bottom: 2em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/* line 61, ../sass/base/_forms.scss */
+.normal-form .btn {
+  font-weight: 700;
+  font-size: 15px;
+  font-size: 1.07143rem;
+  padding: .8em;
+}
+
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+@media only screen and (min-width: 50em) {
+  /* line 20, ../sass/base/_grid.scss */
+  .one-whole {
+    width: 100%;
+  }
+
+  /* line 26, ../sass/base/_grid.scss */
+  .one-half, .two-quarters {
+    width: 50%;
+  }
+
+  /* line 31, ../sass/base/_grid.scss */
+  .one-third {
+    width: 33.333%;
+  }
+
+  /* line 32, ../sass/base/_grid.scss */
+  .two-thirds {
+    width: 66.666%;
+  }
+
+  /* line 38, ../sass/base/_grid.scss */
+  .one-quarter {
+    width: 25%;
+  }
+
+  /* line 40, ../sass/base/_grid.scss */
+  .three-quarters {
+    width: 75%;
+  }
+}
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/* line 6, ../sass/base/_headings.scss */
+h1, .alpha {
+  font-size: 28px;
+  font-size: 2rem;
+}
+
+/* line 9, ../sass/base/_headings.scss */
+h2, .beta {
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+/* line 12, ../sass/base/_headings.scss */
+h3, .gamma {
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+
+/* line 35, ../sass/base/_headings.scss */
+.normal-heading, .big-heading {
+  font-size: 30px;
+  font-size: 2.14286rem;
+  font-weight: 300;
+  margin: 1.25em 0 0.625em 0;
+  text-align: center;
+}
+
+/* line 42, ../sass/base/_headings.scss */
+.big-heading {
+  font-size: 36px;
+  font-size: 2.57143rem;
+}
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/* line 6, ../sass/base/_layout.scss */
+.wrapper {
+  width: 98%;
+  max-width: 975px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1050px) {
+  /* line 6, ../sass/base/_layout.scss */
+  .wrapper {
+    width: 100%;
+  }
+}
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+/* Grid Container */
+/* line 22, ../sass/base/_layout.scss */
+.g {
+  letter-spacing: -0.35em;
+}
+/* line 24, ../sass/base/_layout.scss */
+.g > * {
+  letter-spacing: normal;
+}
+
+/* Grid Item */
+/* line 30, ../sass/base/_layout.scss */
+.gi {
+  letter-spacing: normal;
+}
+@media only screen and (min-width: 50em) {
+  /* line 30, ../sass/base/_layout.scss */
+  .gi {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* line 41, ../sass/base/_layout.scss */
+.mr {
+  margin-right: 1%;
+}
+
+/* line 45, ../sass/base/_layout.scss */
+.ml {
+  margin-left: 1%;
+}
+
+/* line 49, ../sass/base/_layout.scss */
+.half-width {
+  width: 49%;
+}
+
+/* line 53, ../sass/base/_layout.scss */
+.forty-width {
+  width: 39%;
+}
+
+/* line 57, ../sass/base/_layout.scss */
+.forty-width {
+  width: 39%;
+}
+
+/* line 61, ../sass/base/_layout.scss */
+.sixty-width {
+  width: 59%;
+}
+
+/* line 65, ../sass/base/_layout.scss */
+.sixty-width {
+  width: 59%;
+}
+
+/* line 69, ../sass/base/_layout.scss */
+.onethird-width {
+  width: 32.33%;
+}
+
+/* line 73, ../sass/base/_layout.scss */
+.eighty-width {
+  width: 79%;
+}
+
+/*------------------------------------*\
+    $NORMALIZE
+\*------------------------------------*/
+/* line 6, ../sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 20, ../sass/base/_normalize.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 24, ../sass/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 30, ../sass/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 35, ../sass/base/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/* line 39, ../sass/base/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 43, ../sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 48, ../sass/base/_normalize.scss */
+h1, h2, h2, h3, h4, h6 {
+  margin: 0;
+}
+
+/* line 58, ../sass/base/_normalize.scss */
+p {
+  margin: 0;
+}
+
+/* line 62, ../sass/base/_normalize.scss */
+::selection {
+  background: #e8f8f5;
+  color: #FFF;
+}
+
+/* line 66, ../sass/base/_normalize.scss */
+::-moz-selection {
+  background: #e8f8f5;
+  color: #FFF;
+}
+
+/* line 71, ../sass/base/_normalize.scss */
+ul, ol, dl, dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 77, ../sass/base/_normalize.scss */
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 84, ../sass/base/_normalize.scss */
+iframe {
+  max-width: 100%;
+}
+
+/* line 88, ../sass/base/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 92, ../sass/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------------*\
+    ICONS
+\*------------------------------------------*/
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.otf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/icomoon.otf?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* line 6, ../sass/objects/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 20, ../sass/objects/_icons.scss */
+.icon-rss-square:before {
+  content: "\f143";
+}

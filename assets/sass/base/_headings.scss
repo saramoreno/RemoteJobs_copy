@@ -1,0 +1,46 @@
+
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+
+h1, .alpha {
+ @include font-size($font_size_alpha);
+} 
+h2, .beta {
+ @include font-size($font_size_beta);
+}
+h3, .gamma {
+  @include font-size($font_size_gamma);
+}
+// h4, .delta {
+//   @include font-size($font_size_delta);
+// }
+// h5, .epsilon {
+//   @include font-size($font_size_epsilon); 
+// }
+// h6, .zeta {
+//   @include font-size($font_size_zeta);
+// }
+
+// .giga {
+//   @include font-size($font_size_giga);
+// }
+// .mega {
+//   @include font-size($font_size_mega);
+// }
+// .kilo {
+//   @include font-size($font_size_kilo);
+// }
+
+.normal-heading {
+  @include font-size(30);
+  font-weight: 300;
+  margin: 1.25em 0 0.625em 0;
+  text-align: center;
+}
+
+.big-heading {
+  @include font-size(36);
+  @extend .normal-heading;
+}
+
