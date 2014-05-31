@@ -1,3 +1,33 @@
 /*------------------------------------------*\
     Main list
 \*------------------------------------------*/
+
+.main-list {
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: .625em;
+    font-size: 1.2rem;
+
+    .new{
+      margin-left: -30px;
+    }
+  }
+
+  .emphasis {
+    background: #FFFFCC;
+  }
+
+  .company {
+    font-weight: 700;
+    margin-right: 10px;
+  }
+
+  .title {
+    color: #39c;
+    text-decoration: underline;
+  }
+  .date {
+    color:#AA9C84;
+    float:right;
+  }
+}

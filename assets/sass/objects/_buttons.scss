@@ -1,0 +1,17 @@
+/*------------------------------------------*\
+    Buttons
+\*------------------------------------------*/
+
+.btn {
+  background: $primary;
+  color: #fff;
+  padding: .5em 1em;
+  display: inline-block;
+  @include border-radius(5px);
+  border-bottom: 3px solid darken($primary, 10%);
+  font-size: 1.2rem;
+
+  &:hover {
+   background: darken($primary, 10%);
+  }
+}

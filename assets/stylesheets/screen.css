@@ -247,31 +247,19 @@ input[type="radio"] {
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
-/* line 46, ../sass/base/_forms.scss */
-.normal-form {
-  margin: 2em auto;
-}
-/* line 49, ../sass/base/_forms.scss */
-.normal-form input {
-  border: 1px solid #555;
-  opacity: .5;
+/* line 47, ../sass/base/_forms.scss */
+.basic-form input {
+  border: 1px solid #ccc;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  padding: 1em;
+  padding: .5em 1.8em;
+  width: 50%;
+  background: white url(../images/search.gif) no-repeat 2% 50%;
+  font-size: 1.2rem;
+  vertical-align: middle;
   outline: none;
-  margin-bottom: 2em;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-/* line 61, ../sass/base/_forms.scss */
-.normal-form .btn {
-  font-weight: 700;
-  font-size: 15px;
-  font-size: 1.07143rem;
-  padding: .8em;
 }
 
 /*------------------------------------*\
@@ -329,21 +317,25 @@ h3, .gamma {
   font-size: 1.42857rem;
 }
 
-/* line 36, ../sass/base/_headings.scss */
+/* line 35, ../sass/base/_headings.scss */
+.main-title {
+  margin: 1em 0;
+}
+/* line 37, ../sass/base/_headings.scss */
 .main-title a {
   text-transform: uppercase;
   color: #cc0000;
   letter-spacing: 5px;
   font-size: 1.4rem;
 }
-/* line 42, ../sass/base/_headings.scss */
+/* line 43, ../sass/base/_headings.scss */
 .main-title .subtitle {
   color: #666666;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: normal;
 }
-/* line 48, ../sass/base/_headings.scss */
+/* line 49, ../sass/base/_headings.scss */
 .main-title span.icon {
   color: #FB9A36;
   font-size: 14px;
@@ -578,3 +570,126 @@ table {
 /*------------------------------------------*\
     Main list
 \*------------------------------------------*/
+/* line 6, ../sass/objects/_main-list.scss */
+.main-list li {
+  border-bottom: 1px solid #ccc;
+  padding: .625em;
+  font-size: 1.2rem;
+}
+/* line 11, ../sass/objects/_main-list.scss */
+.main-list li .new {
+  margin-left: -30px;
+}
+/* line 16, ../sass/objects/_main-list.scss */
+.main-list .emphasis {
+  background: #FFFFCC;
+}
+/* line 20, ../sass/objects/_main-list.scss */
+.main-list .company {
+  font-weight: 700;
+  margin-right: 10px;
+}
+/* line 25, ../sass/objects/_main-list.scss */
+.main-list .title {
+  color: #39c;
+  text-decoration: underline;
+}
+/* line 29, ../sass/objects/_main-list.scss */
+.main-list .date {
+  color: #AA9C84;
+  float: right;
+}
+
+/*------------------------------------------*\
+    New span
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_new.scss */
+.new {
+  background: #fc0;
+  text-transform: uppercase;
+  float: left;
+  font-weight: 700;
+  font-size: 10px;
+  font-size: 10px;
+  font-size: 0.71429rem;
+  padding: .1875em .3125em;
+  position: relative;
+  left: -1.5em;
+  top: 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+/*------------------------------------------*\
+    SECTIONS
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_sections.scss */
+header {
+  margin-top: 4em;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 1px;
+}
+/* line 9, ../sass/objects/_sections.scss */
+header img {
+  height: auto;
+}
+
+/* line 16, ../sass/objects/_sections.scss */
+.main-content .intro p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+/* line 21, ../sass/objects/_sections.scss */
+.main-content .intro p .bold-a {
+  color: black;
+  border-bottom: 3px solid black;
+  font-weight: bold;
+  margin-right: .5em;
+}
+/* line 30, ../sass/objects/_sections.scss */
+.main-content article {
+  margin-bottom: 3.125em;
+}
+/* line 34, ../sass/objects/_sections.scss */
+.main-content section {
+  margin: 2em 0;
+}
+/* line 38, ../sass/objects/_sections.scss */
+.main-content .search {
+  overflow: hidden;
+  /*clearfix*/
+  padding: 15px 30px;
+  background: #EFEFEF;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+/* line 44, ../sass/objects/_sections.scss */
+.main-content .search .btn {
+  vertical-align: middle;
+}
+
+/*------------------------------------------*\
+    Buttons
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_buttons.scss */
+.btn {
+  background: #cc0000;
+  color: #fff;
+  padding: .5em 1em;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border-bottom: 3px solid #990000;
+  font-size: 1.2rem;
+}
+/* line 14, ../sass/objects/_buttons.scss */
+.btn:hover {
+  background: #990000;
+}

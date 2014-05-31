@@ -1,0 +1,48 @@
+/*------------------------------------------*\
+    SECTIONS
+\*------------------------------------------*/
+
+header {
+  margin-top: 4em;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 1px;
+  img {
+    height: auto;
+  }
+}
+
+.main-content {
+  .intro {
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5em;
+      margin-top: 1em;
+
+      .bold-a {
+        color: $text;
+        border-bottom: 3px solid $text;
+        font-weight: bold;
+        margin-right: .5em;
+
+      } 
+    }
+  }
+  article {
+    margin-bottom: 3.125em;
+  }
+
+  section {
+    margin: 2em 0;
+  }
+
+  .search {
+    overflow: hidden; /*clearfix*/
+    padding: 15px 30px;
+    background:#EFEFEF;
+    @include border-radius(50px);
+
+    .btn {
+      vertical-align: middle;
+    }
+  }
+}
