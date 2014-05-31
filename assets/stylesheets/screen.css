@@ -693,3 +693,40 @@ header img {
 .btn:hover {
   background: #990000;
 }
+
+/*------------------------------------------*\
+    Footer
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_footer.scss */
+footer {
+  background: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 2em 0;
+}
+/* line 11, ../sass/objects/_footer.scss */
+footer figure {
+  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 16, ../sass/objects/_footer.scss */
+footer .text {
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
+/* line 22, ../sass/objects/_footer.scss */
+footer .text p {
+  margin-bottom: 1.5em;
+}
+/* line 27, ../sass/objects/_footer.scss */
+footer .bold {
+  color: #cc0000;
+}
+/* line 31, ../sass/objects/_footer.scss */
+footer a {
+  color: #39c;
+  text-decoration: underline;
+}
