@@ -46,3 +46,21 @@ header {
     }
   }
 }
+
+.navigation {
+  overflow: hidden; /*clearfix*/
+}
+
+.title {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 1em;
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    margin-top: 1.5em;
+  }
+}
+
+.main-info {
+  font-size: 1.1rem;
+}

@@ -119,77 +119,81 @@ img {
 }
 
 /* Block Content */
-/* line 33, ../sass/base/_base.scss */
+/* line 32, ../sass/base/_base.scss */
 h1, h2, h2, h3, h4, h6 {
   font-size: 1em;
   font-weight: bold;
 }
 
-/* line 38, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
 p {
   line-height: 1.3;
 }
 
+/* line 41, ../sass/base/_base.scss */
+.normal-p {
+  margin: 1em 0 2em 0;
+}
+
 /* Inline Content */
-/* line 44, ../sass/base/_base.scss */
+/* line 47, ../sass/base/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 49, ../sass/base/_base.scss */
+/* line 52, ../sass/base/_base.scss */
+a.normal-link {
+  color: #39c;
+  text-decoration: underline;
+}
+
+/* line 57, ../sass/base/_base.scss */
 p a {
   color: #cc0000;
 }
 
-/* line 53, ../sass/base/_base.scss */
-.normal-p {
-  font-size: 16px;
-  font-size: 1.14286rem;
-  font-weight: bold;
-}
-
-/* line 58, ../sass/base/_base.scss */
+/* line 61, ../sass/base/_base.scss */
 .small {
   font-weight: 300;
 }
 
-/* line 63, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 66, ../sass/base/_base.scss */
+/* line 69, ../sass/base/_base.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 69, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 74, ../sass/base/_base.scss */
+/* line 77, ../sass/base/_base.scss */
 .left {
   float: left;
 }
 
-/* line 77, ../sass/base/_base.scss */
+/* line 80, ../sass/base/_base.scss */
 .right {
   float: right;
 }
 
-/* line 80, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 83, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 .no-float {
   float: none;
 }
 
-/* line 87, ../sass/base/_base.scss */
+/* line 90, ../sass/base/_base.scss */
 .inline-content {
   display: inline-block;
 }
@@ -329,17 +333,24 @@ h3, .gamma {
   font-size: 1.4rem;
 }
 /* line 43, ../sass/base/_headings.scss */
-.main-title .subtitle {
+.main-title span.icon {
+  color: #FB9A36;
+  font-size: 14px;
+  font-size: 1rem;
+}
+
+/* line 48, ../sass/base/_headings.scss */
+.subtitle {
   color: #666666;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: normal;
 }
-/* line 49, ../sass/base/_headings.scss */
-.main-title span.icon {
-  color: #FB9A36;
-  font-size: 14px;
-  font-size: 1rem;
+
+/* line 55, ../sass/base/_headings.scss */
+.big-title {
+  font-size: 36px;
+  font-size: 2.57143rem;
 }
 
 /*------------------------------------*\
@@ -567,37 +578,54 @@ table {
   content: "\f143";
 }
 
+/* line 23, ../sass/objects/_icons.scss */
+.icon-envelope:before {
+  content: "\e609";
+}
+
+/* line 26, ../sass/objects/_icons.scss */
+.icon-twitter:before {
+  content: "\e606";
+}
+
 /*------------------------------------------*\
-    Main list
+   LISTS
 \*------------------------------------------*/
-/* line 6, ../sass/objects/_main-list.scss */
+/* line 6, ../sass/objects/lists.scss */
 .main-list li {
   border-bottom: 1px solid #ccc;
   padding: .625em;
   font-size: 1.2rem;
 }
-/* line 11, ../sass/objects/_main-list.scss */
+/* line 11, ../sass/objects/lists.scss */
 .main-list li .new {
   margin-left: -30px;
 }
-/* line 16, ../sass/objects/_main-list.scss */
+/* line 16, ../sass/objects/lists.scss */
 .main-list .emphasis {
   background: #FFFFCC;
 }
-/* line 20, ../sass/objects/_main-list.scss */
+/* line 20, ../sass/objects/lists.scss */
 .main-list .company {
   font-weight: 700;
   margin-right: 10px;
 }
-/* line 25, ../sass/objects/_main-list.scss */
+/* line 25, ../sass/objects/lists.scss */
 .main-list .title {
   color: #39c;
   text-decoration: underline;
 }
-/* line 29, ../sass/objects/_main-list.scss */
+/* line 29, ../sass/objects/lists.scss */
 .main-list .date {
   color: #AA9C84;
   float: right;
+}
+
+/* line 36, ../sass/objects/lists.scss */
+.square-list li {
+  list-style-type: square;
+  padding: .5em;
+  margin-left: 2em;
 }
 
 /*------------------------------------------*\
@@ -673,6 +701,29 @@ header img {
   vertical-align: middle;
 }
 
+/* line 50, ../sass/objects/_sections.scss */
+.navigation {
+  overflow: hidden;
+  /*clearfix*/
+}
+
+/* line 54, ../sass/objects/_sections.scss */
+.title {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 1em;
+}
+/* line 57, ../sass/objects/_sections.scss */
+.title h3 {
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+  margin-top: 1.5em;
+}
+
+/* line 64, ../sass/objects/_sections.scss */
+.main-info {
+  font-size: 1.1rem;
+}
+
 /*------------------------------------------*\
     Buttons
 \*------------------------------------------*/
@@ -729,4 +780,65 @@ footer .bold {
 footer a {
   color: #39c;
   text-decoration: underline;
+}
+
+/*------------------------------------------*\
+    Share
+\*------------------------------------------*/
+/* line 6, ../sass/objects/_share.scss */
+.share {
+  vertical-align: top;
+  padding-left: 1em;
+}
+/* line 10, ../sass/objects/_share.scss */
+.share .mail, .share .twitter {
+  padding: .6em 0;
+}
+/* line 13, ../sass/objects/_share.scss */
+.share .mail span.icon, .share .twitter span.icon {
+  padding-right: .3em;
+}
+/* line 16, ../sass/objects/_share.scss */
+.share .mail span.icon-twitter, .share .twitter span.icon-twitter {
+  color: #2CA9E1;
+}
+/* line 20, ../sass/objects/_share.scss */
+.share .mail a, .share .twitter a {
+  color: #777;
+  text-decoration: underline;
+}
+/* line 24, ../sass/objects/_share.scss */
+.share .mail a:hover, .share .twitter a:hover {
+  color: #333;
+  text-decoration: none;
+}
+/* line 31, ../sass/objects/_share.scss */
+.share .mail {
+  border-bottom: 1px dotted #ccc;
+}
+/* line 35, ../sass/objects/_share.scss */
+.share .small-note {
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+/*------------------------------------------*\
+    CALL FOR ACTION
+\*------------------------------------------*/
+/* line 5, ../sass/objects/_call-action.scss */
+.call-action {
+  background: #efefef;
+  padding: 1.5em;
+}
+/* line 9, ../sass/objects/_call-action.scss */
+.call-action h2 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  margin: 0 0 1em 0;
+}
+/* line 15, ../sass/objects/_call-action.scss */
+.call-action p {
+  font-size: 1.1rem;
+  line-height: 1.5em;
 }

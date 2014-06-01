@@ -1,0 +1,38 @@
+/*------------------------------------------*\
+    Share
+\*------------------------------------------*/
+
+
+.share {
+  vertical-align: top;
+  padding-left: 1em;
+
+  .mail, .twitter {
+    padding: .6em 0;
+
+    span.icon {
+      padding-right: .3em;
+    }
+    span.icon-twitter {
+      color: #2CA9E1;
+    }
+
+    a {
+      color: #777;
+      text-decoration: underline;
+
+      &:hover {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+
+  }
+  .mail {
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .small-note {
+      @include font-size(12);
+    }
+}
