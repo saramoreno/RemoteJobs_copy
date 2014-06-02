@@ -366,6 +366,7 @@ h3, .gamma {
   /* line 6, ../sass/base/_layout.scss */
   .wrapper {
     width: 100%;
+    padding: 0 1em;
   }
 }
 
@@ -373,69 +374,69 @@ h3, .gamma {
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 22, ../sass/base/_layout.scss */
+/* line 23, ../sass/base/_layout.scss */
 .g {
   letter-spacing: -0.35em;
 }
-/* line 24, ../sass/base/_layout.scss */
+/* line 25, ../sass/base/_layout.scss */
 .g > * {
   letter-spacing: normal;
 }
 
 /* Grid Item */
-/* line 30, ../sass/base/_layout.scss */
+/* line 31, ../sass/base/_layout.scss */
 .gi {
   letter-spacing: normal;
 }
 @media only screen and (min-width: 50em) {
-  /* line 30, ../sass/base/_layout.scss */
+  /* line 31, ../sass/base/_layout.scss */
   .gi {
     display: inline-block;
     vertical-align: top;
   }
 }
 
-/* line 41, ../sass/base/_layout.scss */
+/* line 42, ../sass/base/_layout.scss */
 .mr {
   margin-right: 1%;
 }
 
-/* line 45, ../sass/base/_layout.scss */
+/* line 46, ../sass/base/_layout.scss */
 .ml {
   margin-left: 1%;
 }
 
-/* line 49, ../sass/base/_layout.scss */
+/* line 50, ../sass/base/_layout.scss */
 .half-width {
   width: 49%;
 }
 
-/* line 53, ../sass/base/_layout.scss */
+/* line 54, ../sass/base/_layout.scss */
 .forty-width {
   width: 39%;
 }
 
-/* line 57, ../sass/base/_layout.scss */
+/* line 58, ../sass/base/_layout.scss */
 .forty-width {
   width: 39%;
 }
 
-/* line 61, ../sass/base/_layout.scss */
+/* line 62, ../sass/base/_layout.scss */
 .sixty-width {
   width: 59%;
 }
 
-/* line 65, ../sass/base/_layout.scss */
+/* line 66, ../sass/base/_layout.scss */
 .sixty-width {
   width: 59%;
 }
 
-/* line 69, ../sass/base/_layout.scss */
+/* line 70, ../sass/base/_layout.scss */
 .onethird-width {
   width: 32.33%;
 }
 
-/* line 73, ../sass/base/_layout.scss */
+/* line 74, ../sass/base/_layout.scss */
 .eighty-width {
   width: 79%;
 }
@@ -591,37 +592,49 @@ table {
 /*------------------------------------------*\
    LISTS
 \*------------------------------------------*/
-/* line 6, ../sass/objects/lists.scss */
+@media only screen and (min-width: 50em) and (max-width: 69.21429em) {
+  /* line 5, ../sass/objects/_lists.scss */
+  .main-list {
+    padding-left: 1.5em;
+  }
+}
+/* line 11, ../sass/objects/_lists.scss */
 .main-list li {
   border-bottom: 1px solid #ccc;
   padding: .625em;
   font-size: 1.2rem;
 }
-/* line 11, ../sass/objects/lists.scss */
+/* line 16, ../sass/objects/_lists.scss */
 .main-list li .new {
   margin-left: -30px;
 }
-/* line 16, ../sass/objects/lists.scss */
+@media only screen and (min-width: 50em) and (max-width: 69.21429em) {
+  /* line 16, ../sass/objects/_lists.scss */
+  .main-list li .new {
+    margin-left: -26px;
+  }
+}
+/* line 24, ../sass/objects/_lists.scss */
 .main-list .emphasis {
   background: #FFFFCC;
 }
-/* line 20, ../sass/objects/lists.scss */
+/* line 28, ../sass/objects/_lists.scss */
 .main-list .company {
   font-weight: 700;
   margin-right: 10px;
 }
-/* line 25, ../sass/objects/lists.scss */
+/* line 33, ../sass/objects/_lists.scss */
 .main-list .title {
   color: #39c;
   text-decoration: underline;
 }
-/* line 29, ../sass/objects/lists.scss */
+/* line 37, ../sass/objects/_lists.scss */
 .main-list .date {
   color: #AA9C84;
   float: right;
 }
 
-/* line 36, ../sass/objects/lists.scss */
+/* line 44, ../sass/objects/_lists.scss */
 .square-list li {
   list-style-type: square;
   padding: .5em;
@@ -648,6 +661,20 @@ table {
   border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+}
+@media only screen and (min-width: 50em) and (max-width: 69.21429em) {
+  /* line 5, ../sass/objects/_new.scss */
+  .new {
+    font-size: 9px;
+    font-size: 0.64286rem;
+    padding: .2em;
+  }
+}
+@media only screen and (max-width: 49.92857em) {
+  /* line 5, ../sass/objects/_new.scss */
+  .new {
+    display: none;
+  }
 }
 
 /*------------------------------------------*\
