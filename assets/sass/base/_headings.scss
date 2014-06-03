@@ -43,6 +43,7 @@ h3, .gamma {
   span.icon {
     color:#FB9A36;
     @include font-size(14);
+    padding-left: .5em;
   }
 }
 .subtitle {
@@ -50,6 +51,13 @@ h3, .gamma {
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: normal;
+
+
+
+  @include media-query(palm) {
+    display: block;
+    margin-top: 1em;
+  }
 }
 
 .big-title {

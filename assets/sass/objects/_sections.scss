@@ -41,8 +41,18 @@ header {
     background:#EFEFEF;
     @include border-radius(50px);
 
+    .post {
+      @include media-query(palm) {
+      float: none;
+      text-align: center;
+      }
+    }
+
     .btn {
       vertical-align: middle;
+      @include media-query(palm) {
+        width: 100%;
+      }
     }
   }
 }
@@ -51,7 +61,7 @@ header {
   overflow: hidden; /*clearfix*/
 }
 
-.title {
+section.title {
   border-bottom: 1px dotted #ccc;
   padding-bottom: 1em;
   h3 {

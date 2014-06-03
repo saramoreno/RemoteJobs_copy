@@ -18,6 +18,9 @@
       @include media-query(lap) {
         margin-left: -26px;
       }
+      @include media-query(palm) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -33,10 +36,22 @@
   .title {
     color: #39c;
     text-decoration: underline;
+    @include media-query(palm) {
+      display: block;
+      padding-top: .2em;
+    }
   }
+
   .date {
     color:#AA9C84;
     float:right;
+    @include media-query(palm) {
+      @include font-size(15);
+      position: relative; 
+      top: -30px;
+      left: 0;
+    
+    }
   }
 }
 
