@@ -733,29 +733,35 @@ header {
 header img {
   height: auto;
 }
+@media only screen and (max-width: 49.92857em) {
+  /* line 12, ../sass/objects/_sections.scss */
+  header .one-third {
+    width: 50%;
+  }
+}
 
-/* line 16, ../sass/objects/_sections.scss */
+/* line 21, ../sass/objects/_sections.scss */
 .main-content .intro p {
   font-size: 1.5rem;
   line-height: 1.5em;
   margin-top: 1em;
 }
-/* line 21, ../sass/objects/_sections.scss */
+/* line 26, ../sass/objects/_sections.scss */
 .main-content .intro p .bold-a {
   color: black;
   border-bottom: 3px solid black;
   font-weight: bold;
   margin-right: .5em;
 }
-/* line 30, ../sass/objects/_sections.scss */
+/* line 35, ../sass/objects/_sections.scss */
 .main-content article {
   margin-bottom: 3.125em;
 }
-/* line 34, ../sass/objects/_sections.scss */
+/* line 39, ../sass/objects/_sections.scss */
 .main-content section {
   margin: 2em 0;
 }
-/* line 38, ../sass/objects/_sections.scss */
+/* line 43, ../sass/objects/_sections.scss */
 .main-content .search {
   overflow: hidden;
   /*clearfix*/
@@ -767,42 +773,42 @@ header img {
   /* stops bg color from leaking outside the border: */
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 44, ../sass/objects/_sections.scss */
+  /* line 49, ../sass/objects/_sections.scss */
   .main-content .search .post {
     float: none;
     text-align: center;
   }
 }
-/* line 51, ../sass/objects/_sections.scss */
+/* line 56, ../sass/objects/_sections.scss */
 .main-content .search .btn {
   vertical-align: middle;
 }
 @media only screen and (max-width: 49.92857em) {
-  /* line 51, ../sass/objects/_sections.scss */
+  /* line 56, ../sass/objects/_sections.scss */
   .main-content .search .btn {
     width: 100%;
   }
 }
 
-/* line 60, ../sass/objects/_sections.scss */
+/* line 65, ../sass/objects/_sections.scss */
 .navigation {
   overflow: hidden;
   /*clearfix*/
 }
 
-/* line 64, ../sass/objects/_sections.scss */
+/* line 69, ../sass/objects/_sections.scss */
 section.title {
   border-bottom: 1px dotted #ccc;
   padding-bottom: 1em;
 }
-/* line 67, ../sass/objects/_sections.scss */
+/* line 72, ../sass/objects/_sections.scss */
 section.title h3 {
   font-size: 1.2rem;
   line-height: 1.1rem;
   margin-top: 1.5em;
 }
 
-/* line 74, ../sass/objects/_sections.scss */
+/* line 79, ../sass/objects/_sections.scss */
 .main-info {
   font-size: 1.1rem;
 }
@@ -882,40 +888,58 @@ footer a {
     Share
 \*------------------------------------------*/
 /* line 6, ../sass/objects/_share.scss */
-.share {
+.share, .share-palm {
   vertical-align: top;
   padding-left: 1em;
 }
-/* line 10, ../sass/objects/_share.scss */
-.share .mail, .share .twitter {
-  padding: .6em 0;
+@media only screen and (max-width: 49.92857em) {
+  /* line 6, ../sass/objects/_share.scss */
+  .share, .share-palm {
+    display: none;
+  }
 }
 /* line 13, ../sass/objects/_share.scss */
-.share .mail span.icon, .share .twitter span.icon {
-  padding-right: .3em;
+.share .mail, .share-palm .mail, .share .twitter, .share-palm .twitter {
+  padding: .6em 0;
 }
 /* line 16, ../sass/objects/_share.scss */
-.share .mail span.icon-twitter, .share .twitter span.icon-twitter {
+.share .mail span.icon, .share-palm .mail span.icon, .share .twitter span.icon, .share-palm .twitter span.icon {
+  padding-right: .3em;
+}
+/* line 19, ../sass/objects/_share.scss */
+.share .mail span.icon-twitter, .share-palm .mail span.icon-twitter, .share .twitter span.icon-twitter, .share-palm .twitter span.icon-twitter {
   color: #2CA9E1;
 }
-/* line 20, ../sass/objects/_share.scss */
-.share .mail a, .share .twitter a {
+/* line 23, ../sass/objects/_share.scss */
+.share .mail a, .share-palm .mail a, .share .twitter a, .share-palm .twitter a {
   color: #777;
   text-decoration: underline;
 }
-/* line 24, ../sass/objects/_share.scss */
-.share .mail a:hover, .share .twitter a:hover {
+/* line 27, ../sass/objects/_share.scss */
+.share .mail a:hover, .share-palm .mail a:hover, .share .twitter a:hover, .share-palm .twitter a:hover {
   color: #333;
   text-decoration: none;
 }
-/* line 31, ../sass/objects/_share.scss */
-.share .mail {
+/* line 34, ../sass/objects/_share.scss */
+.share .mail, .share-palm .mail {
   border-bottom: 1px dotted #ccc;
 }
-/* line 35, ../sass/objects/_share.scss */
-.share .small-note {
+/* line 38, ../sass/objects/_share.scss */
+.share .small-note, .share-palm .small-note {
   font-size: 12px;
   font-size: 0.85714rem;
+}
+
+/* line 43, ../sass/objects/_share.scss */
+.share-palm {
+  display: none;
+  padding-bottom: 2em;
+}
+@media only screen and (max-width: 49.92857em) {
+  /* line 43, ../sass/objects/_share.scss */
+  .share-palm {
+    display: block;
+  }
 }
 
 /*------------------------------------------*\

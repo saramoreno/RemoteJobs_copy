@@ -9,6 +9,11 @@ header {
   img {
     height: auto;
   }
+  .one-third {
+    @include media-query(palm){
+      width: 50%;
+    }
+  }
 }
 
 .main-content {

@@ -6,6 +6,9 @@
 .share {
   vertical-align: top;
   padding-left: 1em;
+  @include media-query(palm) {
+    display:none;
+  }
 
   .mail, .twitter {
     padding: .6em 0;
@@ -35,4 +38,14 @@
   .small-note {
       @include font-size(12);
     }
+}
+
+.share-palm {
+  @extend .share;
+  display:none;
+  padding-bottom: 2em;
+
+  @include media-query(palm) {
+    display:block;
+  }
 }
